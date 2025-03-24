@@ -1,0 +1,25 @@
+// https://dbdiagram.io/d/67e10c1c75d75cc84433678d
+
+Table agency {
+  id integer [primary key ]
+  username varchar(50)
+  code varchar(50) [unique]
+  level varchar(50)
+  parent integer [ref : > agency.id]
+}
+
+Table users {
+  id integer [ primary key ]
+  password varchar(50)
+  id_agency integer [ref : > agency.id]
+  username varchar(50)
+}
+
+
+Table post {
+  id integer [ primary key]
+  id_user integer [ref : > users.id]
+  created_at timestamp 
+  status varchar(50)
+  content varchar(50)
+}
