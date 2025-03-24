@@ -21,7 +21,7 @@
     <tr>
       <td>Nguyen Tuan Anh </td>
       <td>20233258</td>
-      <td>Databse</td>
+      <td>Database</td>
     </tr>
     <tr>
       <td>Bob</td>
