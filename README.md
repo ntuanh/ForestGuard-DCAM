@@ -3,7 +3,6 @@
   ---------------------------------------------
 * TechStack :
 <div style="display: flex; align-items: flex-start;"><img src="https://techstack-generator.vercel.app/csharp-icon.svg" alt="icon" width="100" height="100" /><img src="https://techstack-generator.vercel.app/mysql-icon.svg" alt="icon" width="100" height="100" /></div>
-  --------------------------------------------
 * Report :
   --------------------------------------------
 * How to run : 
