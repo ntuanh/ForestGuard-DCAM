@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{897D371C-FAC8-4711-9A23-4ED46A663D0D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WinApp</RootNamespace>
+    <AssemblyName>WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\dell\Downloads\VST\VST\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\dell\Downloads\VST\VST\Newtonsoft.Json.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Actors\User.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\GiongCayController.cs" />
+    <Compile Include="Controllers\HanhChinhController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MeController.cs" />
+    <Compile Include="Controllers\MigrateController.cs" />
+    <Compile Include="Controllers\MigrateResult.cs" />
+    <Compile Include="Controllers\TaiKhoanController.cs" />
+    <Compile Include="Models\%28Document%29.cs" />
+    <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Migration\CodeGenerator.cs" />
+    <Compile Include="Models\Config.cs" />
+    <Compile Include="Models\DonVi.cs" />
+    <Compile Include="Models\MigrateResult.cs" />
+    <Compile Include="Models\Migration\Provider.cs" />
+    <Compile Include="Models\UpdateContext.cs" />
+    <Compile Include="Views\Admin\Test.cs" />
+    <Compile Include="Views\BaseView.cs" />
+    <Compile Include="Views\GiongCay\Index.cs" />
+    <Compile Include="Views\HanhChinh\DonViSelector.xaml.cs">
+      <DependentUpon>DonViSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\Admin.cs" />
+    <Compile Include="Views\Home\Developer.cs" />
+    <Compile Include="Views\HanhChinh\HanhChinhManagerView.cs" />
+    <Compile Include="Views\Home\Loading.cs" />
+    <Compile Include="Views\Me\ProfileView.cs" />
+    <Compile Include="Views\Migrate\Index.cs" />
+    <Compile Include="Views\Migrate\MigrateLayout.xaml.cs">
+      <DependentUpon>MigrateLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TaiKhoan\TaiKhoanManagerView.cs" />
+    <Compile Include="Views\_layouts\PageHeader.xaml.cs">
+      <DependentUpon>PageHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\_layouts\DataListViewLayout.xaml.cs">
+      <DependentUpon>DataListViewLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home\Index.cs" />
+    <Compile Include="Views\Login\Login.cs" />
+    <Compile Include="Views\Migrate\CodeViewer.xaml.cs">
+      <DependentUpon>CodeViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Migrate\Gen.cs" />
+    <Compile Include="Views\_layouts\MainUserLayout.xaml.cs">
+      <DependentUpon>MainUserLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\_layouts\FormViewLayout.xaml.cs">
+      <DependentUpon>FormViewLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\_controls\MyEditors.cs" />
+    <Compile Include="Views\_controls\MyTableView.cs" />
+    <Compile Include="Views\_controls\MyElements.cs" />
+    <Compile Include="VST\Data\BsonDataMap.cs" />
+    <Compile Include="VST\Data\Collection.cs" />
+    <Compile Include="VST\Data\Database.cs" />
+    <Compile Include="VST\Data\Document.cs" />
+    <Compile Include="VST\Data\ObjectId.cs" />
+    <Compile Include="VST\Json\%28MD5%29.cs" />
+    <Compile Include="VST\Json\DataContext.cs" />
+    <Compile Include="VST\Json\Document.cs" />
+    <Compile Include="VST\Json\Network.cs" />
+    <Compile Include="VST\Json\ObjectExtension.cs" />
+    <Compile Include="VST\Json\ShareMemory.cs" />
+    <Compile Include="VST\Json\StringExtension.cs" />
+    <Compile Include="VST\Json\TypeExtension.cs" />
+    <Compile Include="VST\Json\VietUnicode.cs" />
+    <Compile Include="VST\MVC\ActionContext.cs" />
+    <Compile Include="VST\MVC\ActionResult.cs" />
+    <Compile Include="VST\MVC\Controller.cs" />
+    <Compile Include="VST\MVC\Engine.cs" />
+    <Compile Include="VST\MVC\RequestContext.cs" />
+    <Compile Include="VST\MVC\Session.cs" />
+    <Compile Include="VST\MVC\View.cs" />
+    <Compile Include="VST\MVC\ViewDataDictionary.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\HanhChinh\DonViSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Migrate\MigrateLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\_layouts\PageHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\_layouts\DataListViewLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Migrate\CodeViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\_layouts\MainUserLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\_layouts\FormViewLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App_Data\Actions.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="App_Data\Config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="SQL\Procs.sql" />
+    <Content Include="SQL\Tables.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

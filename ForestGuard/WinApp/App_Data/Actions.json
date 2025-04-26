@@ -1,0 +1,82 @@
+﻿{
+  "#": {
+    "home": "Trang chủ",
+    "migrate": "Load database",
+    "migrate/csharp": "C#",
+    "migrate/s/model": "Models",
+    "migrate/s/view": "Views",
+    "migrate/s/controller": "Controllers",
+    "migrate/sql": "SQL",
+    "migrate/s/proc": "Procedures",
+    "taikhoan": "Quản lý người dùng",
+    "taikhoan/lichsu": "Lịch sử đăng nhập",
+    "hanhchinh": "Quản lý hành chính",
+    "hanhchinh/huyen": "Đơn vị cấp huyện",
+    "hanhchinh/xa": "Đơn vị cấp xã",
+    "me/changepass": "Đổi mật khẩu",
+    "giongcay": "Giống cây trồng",
+    "giongcay/index": "Thông tin giống cây",
+    "giongcay/cssx": "Cơ sở sản xuất",
+    "sanxuat": "Sản xuất",
+    "tainguyen": "Tài nguyên",
+    ".": ""
+  },
+  "actors": {
+    "Developer": {
+      "home": {
+        "Childs": [
+          {
+            "Text": "SQL",
+            "Refs": [ "migrate" ]
+          }
+        ]
+      },
+      "migrate/csharp": {
+        "Childs": [
+          {
+            "Text": "Project",
+            "Refs": [ "migrate/s/model", "migrate/s/controller", "migrate/s/view" ]
+          }
+        ]
+      },
+      "migrate/sql": {
+        "Childs": [
+          {
+            "Text": "Project",
+            "Refs": [ "migrate/s/proc" ]
+          }
+        ]
+      }
+    },
+    "Admin": {
+      "home": {
+        "Childs": [
+          {
+            "Text": "Người dùng",
+            "Refs": [ "taikhoan", "taikhoan/lichsu" ]
+          },
+          {
+            "Text": "Hành chính",
+            "Refs": [ "hanhchinh", "hanhchinh/huyen", "hanhchinh/xa" ]
+          },
+          {
+            "Text": "Profile",
+            "Refs": [ "me/changepass" ]
+          }
+        ]
+      },
+      "giongcay": {
+        "Childs": [
+          {
+            "Text": "Dữ liệu",
+            "Refs": ["giongcay/index", "giongcay/cssx"]
+          },
+          {
+            "Text": "Thống kê",
+            "Refs": [ "giongcay/index" ]
+          }
+        ]
+      }
+    }
+  }
+}
