@@ -24,24 +24,24 @@
       <td>Database Admin & PM</td>
     </tr>
     <tr>
-      <td>Bob</td>
-      <td>30</td>
-      <td>Los Angeles</td>
+      <td>Vu Thi Phuong Hoa</td>
+      <td>20233406</td>
+      <td>UI/UX Designer</td>
     </tr>
     <tr>
-      <td>Charlie</td>
-      <td>25</td>
-      <td>Chicago</td>
+      <td>Ha Nhu Nguyet</td>
+      <td>20233560</td>
+      <td>UI/UX Designer</td>
     </tr>
     <tr>
-      <td>Charlie</td>
-      <td>25</td>
-      <td>Chicago</td>
+      <td>Nguyen Trong Hai An</td>
+      <td>20233236</td>
+      <td>Systems Admin</td>
     </tr>
     <tr>
-      <td>Charlie</td>
-      <td>25</td>
-      <td>Chicago</td>
+      <td>Pham Trung Hieu</td>
+      <td>20233401</td>
+      <td>Technical Report</td>
     </tr>
   </tbody>
 </table>
