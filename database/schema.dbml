@@ -1,25 +1,124 @@
-// https://dbdiagram.io/d/67e10c1c75d75cc84433678d
 
-Table agency {
+  //  parentinteger [ref : > agency.id]
+
+
+Table Quanlihanhchinh {
+  id integer [primary key]
+  ten vachar(50)
+  cap_hanh_chinh_id integer 
+  truc_thuoc integer [ref : < Quanlihanhchinh.id]
+}
+
+Table Caphanhchinh {
+  id integer [ref : > Quanlihanhchinh.cap_hanh_chinh_id]
+  ten_cap varchar(50)
+  cap_hanh_chinh integer 
+}
+
+
+Table Quanlinguoidung {
   id integer [primary key ]
-  username varchar(50)
-  code varchar(50) [unique]
-  level varchar(50)
-  parent integer [ref : > agency.id]
+  don_vi_hanh_chinh_id integer [ref : > Quanlihanhchinh.id]
+  nhom_nguoi_dung_id integer [ref : < Nhomnguoidung.id]
 }
 
-Table users {
-  id integer [ primary key ]
-  password varchar(50)
-  id_agency integer [ref : > agency.id]
-  username varchar(50)
+Table Nhomnguoidung {
+  id integer [primary key]
+  ten_nhom_nguoi_dung varchar(50)
+}
+
+Table Quyen{
+  id integer [primary key]
+  quyen_nguoi_dung varchar(50)  
+}
+
+Table NhomQuyen {
+  id_quyen integer [ref : < Quyen.id]
+  id_nhom_nguoi integer [ref : < Nhomnguoidung.id]
+}
+
+Table Lichsunguoidung {
+  id integer [primary key ]
+  nguoi_dung_id integer [ref : > Quanlinguoidung.id]
+  thoi_gian_dang_nhap time 
+  thoi_gian_dang_xuat time
+}
+
+Table Tacdongnguoidung {
+  id_nguoi_dung integer [ref : > Quanlinguoidung.id]
+  id_hanh_dong integer [ref: > Quyen.id]
+}
+
+Table Rung{
+  id_rung integer [PK]
+  ten_rung varchar(50)
+  toa_do varchar(50)
+  don_vi_hanh_chinh_id integer [ref : > Quanlihanhchinh.id]
+  nguon_goc_rung_id integer [ref : < Nguongoc.nguon_goc_id]
+  muc_dich_id integer [ref: < Mucdich.muc_dich_id]
+  chu_rung_id integer [ref: < ChuRung.chu_rung_id]
+}
+
+Table Nguongoc{
+  nguon_goc_id integer [PK]
+  ten_nguon_goc varchar(50) 
+}
+
+Table Bangcay {
+  id_rung integer [ref : - Rung.id_rung]
+  loai_cay_id integer [ref : < Loaicay.loai_cay_id]
+}
+
+Table Loaicay {
+  loai_cay_id integer [PK]
+  ten_loai_cay varchar(50)
+}
+
+Table Mucdich {
+  muc_dich_id integer [PK]
+  ten_muc_dich varchar(50)
+}
+
+Table ChuRung {
+  chu_rung_id integer [PK]
+  ten_chu_rung varchar(50)
+  loai_chu_rung_id integer [ref: > LoaiChu.loai_chu_id]
+}
+
+Table LoaiChu {
+  loai_chu_id integer [PK]
+  ten_loai_chu varchar(50)
+}
+
+Table ThienTai {
+  id integer [PK]
+  ten varchar(50)
+  toa_do varchar(50)
+  muc_do_thien_tai_id integer [ref : < MucDoThietHai.id]
+  don_vi_hanh_chinh_id integer [ref : < Quanlihanhchinh.id]
+  phan_loai_thien_tai_id integer [ref : < LoaiThienTai.id]
+}
+
+Table LoaiThienTai {
+  id integer [PK]
+  ten varchar(50)
+}
+
+Table MucDoThietHai {
+  id integer [PK]
+  muc_do varchar(50)
+}
+
+Table HoSo{
+  id integer [ ref : - Quanlinguoidung.id]
+  so_dien_thoai varchar(50) [PK]
+  email varchar(50)
+  ext varchar(50)
 }
 
 
-Table post {
-  id integer [ primary key]
-  id_user integer [ref : > users.id]
-  created_at timestamp 
-  status varchar(50)
-  content varchar(50)
-}
+
+
+
+
+
