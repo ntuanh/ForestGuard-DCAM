@@ -1,5 +1,5 @@
 ﻿using System;
-namespace WinApp.Views.TaiKhoan1
+namespace WinApp.Views.GiongCay
 {
     using Vst.Controls;
     using Models;
@@ -7,10 +7,16 @@ namespace WinApp.Views.TaiKhoan1
     {
         protected override void RenderCore(ViewContext context)
         {
-            context.Title = "List of TaiKhoan";
+            base.RenderCore(context);
+            context.Title = "Giống cây";
             context.TableColumns = new object[] {
-                new TableColumn { Name = "Ten", Caption = "Ten Header", Width = 100, },
-                new TableColumn { Name = "MatKhau", Caption = "MatKhau Header", Width = 100, },
+                new TableColumn { Name = "Ten", Caption = "Tên giống", Width = 150, },
+                new TableColumn { Name = "Nguon", Caption = "Xuất sứ", Width = 100, },
+            };
+            // Nếu không cần tìm kiếm thì xóa đoạn code này
+            context.Search = (e, s) => {
+                var x = (GiongCay)e;
+                return x.Ten.ToLower().Contains(s);
             };
         }
     }
@@ -18,14 +24,11 @@ namespace WinApp.Views.TaiKhoan1
     {
         protected override void RenderCore(ViewContext context)
         {
-            context.Title = "TaiKhoan Information";
+            base.RenderCore(context);
+            context.Title = "GiongCay Information";
             context.Editors = new object[] {
                 new EditorInfo { Name = "Ten", Caption = " Caption of Ten", Layout = 12,   },
-                new EditorInfo { Name = "MatKhau", Caption = " Caption of MatKhau", Layout = 12,   },
-                new EditorInfo { Name = "QuyenId", Caption = " Caption of QuyenId", Layout = 12,
-    Type = "select", ValueName = "Id", DisplayName = "FieldName", Options = Provider.Select<Quyen>(), },
-                new EditorInfo { Name = "HoSoId", Caption = " Caption of HoSoId", Layout = 12,
-    Type = "select", ValueName = "Id", DisplayName = "FieldName", Options = Provider.Select<HoSo>(), },
+                new EditorInfo { Name = "Nguon", Caption = " Caption of Nguon", Layout = 12,   },
             };
         }
     }
@@ -33,8 +36,8 @@ namespace WinApp.Views.TaiKhoan1
     {
         protected override void OnReady()
         {
-            // Thay FieldName bằng tên trường muốn thể hiện trên câu hỏi xóa bản ghi
-            ShowDeleteAction("FieldName");
+            // Thay Ten bằng tên trường muốn thể hiện trên câu hỏi xóa bản ghi
+            ShowDeleteAction("Ten");
             // Thay EditorName bằng tên trường muốn cấm soạn thảo
             Find("EditorName", c => c.IsEnabled = false);
         }

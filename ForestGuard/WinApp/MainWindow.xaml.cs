@@ -62,7 +62,9 @@ namespace WinApp
             };
 
             Provider.Current.Schema.Migrate();
-            App.Start();
+            //App.Start();
+            App.User = new Actors.Admin();
+            App.Request("home");
         }
     }
 }

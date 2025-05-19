@@ -20,7 +20,7 @@ namespace WinApp.Views.HanhChinh
         protected override void RenderCore(ViewContext context)
         {
             base.RenderCore(context);
-            context.Title = "Đơn vị hành chính";
+            context.Title = "Đơn vị hành chính checking";
             context.TableColumns = new TC[] {
                 new TC { Name = "TenDayDu", Caption = "Tên đơn vị", Width = 250 },
                 new TC { Name = "TrucThuoc", Caption = "Trực thuộc", Width = 120 },

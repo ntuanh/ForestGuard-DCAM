@@ -43,20 +43,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Users\dell\Downloads\VST\VST\Newtonsoft.Json.Bson.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -73,6 +60,7 @@
     <Compile Include="Controllers\MeController.cs" />
     <Compile Include="Controllers\MigrateController.cs" />
     <Compile Include="Controllers\MigrateResult.cs" />
+    <Compile Include="Controllers\RungController.cs" />
     <Compile Include="Controllers\TaiKhoanController.cs" />
     <Compile Include="Models\%28Document%29.cs" />
     <Compile Include="Models\Account.cs" />
@@ -81,6 +69,7 @@
     <Compile Include="Models\DonVi.cs" />
     <Compile Include="Models\MigrateResult.cs" />
     <Compile Include="Models\Migration\Provider.cs" />
+    <Compile Include="Models\Rung.cs" />
     <Compile Include="Models\UpdateContext.cs" />
     <Compile Include="Views\Admin\Test.cs" />
     <Compile Include="Views\BaseView.cs" />
@@ -97,7 +86,9 @@
     <Compile Include="Views\Migrate\MigrateLayout.xaml.cs">
       <DependentUpon>MigrateLayout.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Rung\Index.cs" />
     <Compile Include="Views\TaiKhoan\TaiKhoanManagerView.cs" />
+    <Compile Include="Views\ViewRung\ViewRungManagerGUI.cs" />
     <Compile Include="Views\_layouts\PageHeader.xaml.cs">
       <DependentUpon>PageHeader.xaml</DependentUpon>
     </Compile>
