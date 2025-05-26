@@ -12,9 +12,6 @@ namespace Models
     }
     partial class DonVi
     {
-
-        public string TenDayDu => $"{TenHanhChinh} {Ten}";
-
         static List<ViewDonVi> _all;
         static public List<ViewDonVi> All
         {

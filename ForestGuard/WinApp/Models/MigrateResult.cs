@@ -1,17 +1,111 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Models
+﻿namespace Models
 {
-    public partial class GiongCay
+    public partial class Chu
     {
         public int? Id { get; set; }
         public string Ten { get; set; }
-        public string Nguon { get; set; }
+        public int? LoaiChuId { get; set; }
     }
+}
+namespace Models
+{
+    public partial class DieuKien
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class DonVi
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+        public int? HanhChinhId { get; set; }
+        public string TenHanhChinh { get; set; }
+        public int? TrucThuocId { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class HanhChinh
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+        public int? TrucThuocId { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class HoSo
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+        public string SDT { get; set; }
+        public string Email { get; set; }
+        public string Ext { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class LoaiCay
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class LoaiChu
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class LoaiThienTai
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class MucDich
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+        public int? TrucThuocId { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class NguonGoc
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class PhanLoai
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+    }
+}
+namespace Models
+{
+    public partial class Quyen
+    {
+        public int? Id { get; set; }
+        public string Ten { get; set; }
+        public string Ext { get; set; }
+    }
+}
+namespace Models
+{
     public partial class Rung
     {
         public int? Id { get; set; }
@@ -27,89 +121,26 @@ namespace Models
         public int? TruLuongId { get; set; }
         public int? TrucThuocId { get; set; }
     }
-    public partial class Chu
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-        public int? LoaiChuId { get; set; }
-    }
-    public partial class DieuKien
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-    }
-    public partial class LoaiCay
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-    }
-    public partial class LoaiChu
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-    }
-    public partial class TruLuong
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-    }
-    public partial class MucDich
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-        public long? ParentId { get; set; }
-    }
-    public partial class NguonGoc
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-    }
-
-    public partial class DonVi
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-        public int? HanhChinhId { get; set; }
-        public string TenHanhChinh { get; set; }
-        public int? TrucThuocId { get; set; }
-    }
-
-    public class HanhChinh
-    {
-        public int Id { get; set; }
-        public string Ten { get; set; }
-        public int TrucThuocId { get; set; }
-    }
-
-    public class HoSo
-    {
-        public int Id { get; set; }
-        public string Ten { get; set; }
-        public string SDT { get; set; }
-        public string Email { get; set; }
-        public string Ext { get; set; }
-    }
-
-    public class Quyen
-    {
-        public int Id { get; set; }
-        public string Ten { get; set; }
-        public string Ext { get; set; }
-    }
-
-    public class TaiKhoan
+}
+namespace Models
+{
+    public partial class TaiKhoan
     {
         public string Ten { get; set; }
         public string MatKhau { get; set; }
-        public int QuyenId { get; set; }
-        public int HoSoId { get; set; }
+        public int? QuyenId { get; set; }
+        public int? HoSoId { get; set; }
     }
-
-    public class TenHanhChinh
+}
+namespace Models
+{
+    public partial class TenHanhChinh
     {
         public string Ten { get; set; }
     }
-
+}
+namespace Models
+{
     public partial class ThienTai
     {
         public int? Id { get; set; }
@@ -119,31 +150,17 @@ namespace Models
         public int? LoaiThienTaiId { get; set; }
         public int? PhanLoaiId { get; set; }
     }
-
-    public partial class PhanLoai
+}
+namespace Models
+{
+    public partial class TruLuong
     {
         public int? Id { get; set; }
         public string Ten { get; set; }
     }
-
-    public partial class LoaiThienTai
-    {
-        public int? Id { get; set; }
-        public string Ten { get; set; }
-    }
-
-    public partial class ViewThienTai
-    {
-        public int Id { get; set; }
-        public string TenThienTai { get; set; }
-        public string ToaDo { get; set; }
-        public string MucDoThietHai { get; set; }
-        public int? LoaiThienTaiId { get; set; }
-        public int? PhanLoaiId { get; set; }
-        public string LoaiThienTai { get; set; }
-        public string PhanLoai { get; set; }
-    }
-
+}
+namespace Models
+{
     public partial class ViewDonVi
     {
         public int? Id { get; set; }
@@ -154,21 +171,26 @@ namespace Models
         public string Cap { get; set; }
         public string TrucThuoc { get; set; }
     }
-    public class ViewHoSo
+}
+namespace Models
+{
+    public partial class ViewHoSo
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string Ten { get; set; }
         public string SDT { get; set; }
         public string Email { get; set; }
         public string Ext { get; set; }
         public string TenDangNhap { get; set; }
         public string MatKhau { get; set; }
-        public int QuyenId { get; set; }
+        public int? QuyenId { get; set; }
         public string Quyen { get; set; }
     }
+}
+namespace Models
+{
     public partial class ViewRung
     {
-        public int Id { get; set; }
         public string TenRung { get; set; }
         public string ToaDo { get; set; }
         public string DienTich { get; set; }
@@ -190,3 +212,17 @@ namespace Models
         public string RungTrucThuoc { get; set; }
     }
 }
+namespace Models
+{
+    public partial class ViewThienTai
+    {
+        public string TenThienTai { get; set; }
+        public string ToaDo { get; set; }
+        public string MucDoThietHai { get; set; }
+        public int? LoaiThienTaiId { get; set; }
+        public int? PhanLoaiId { get; set; }
+        public string LoaiThienTai { get; set; }
+        public string PhanLoai { get; set; }
+    }
+}
+

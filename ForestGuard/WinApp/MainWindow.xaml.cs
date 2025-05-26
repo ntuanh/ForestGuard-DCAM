@@ -34,9 +34,9 @@ namespace WinApp
                 var view = result.View as Views.BaseView;
                 var context = view.ViewContext;
                 var content = context.Result as UIElement;
-                
+
                 if (content == null) return;
-                
+
                 var layout = context.Layout as UIElement;
                 if (layout is Window)
                 {

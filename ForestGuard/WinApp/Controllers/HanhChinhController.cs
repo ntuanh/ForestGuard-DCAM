@@ -9,7 +9,11 @@ namespace WinApp.Controllers
 {
     partial class HanhChinhController
     {
-        protected override ViewDonVi CreateEntity() => new ViewDonVi { HanhChinhId = DonVi.CapHanhChinhDangXuLy };
+        protected override ViewDonVi CreateEntity() => new ViewDonVi {
+            TenHanhChinh = "Quận",
+            Ten = "Hoàng Mai",
+            HanhChinhId = DonVi.CapHanhChinhDangXuLy 
+        };
         public object Add(ViewDonVi one) => View(new EditContext { Model = one, Action = EditActions.Insert });
         public override object Index()
         {
@@ -22,36 +26,16 @@ namespace WinApp.Controllers
         public object Huyen() => View(Select(2));
         public object Xa() => View(Select(3));
 
-        protected override object Error(int code, string message)
+        protected override DataSchema.Table CreateDataEngine() => Provider.GetTable<DonVi>();
+
+        protected override object UpdateSuccess()
         {
-            if (UpdateContext.Action == EditActions.Delete)
+            switch (UpdateContext.Action)
             {
-                message = $"{((ViewDonVi)UpdateContext.Model).TenDayDu} có các đơn vị con";
-            }
-            return base.Error(code, message);
+                case EditActions.Insert: DonVi.All.Clear(); break;
+                case EditActions.Delete: DonVi.All.Remove((ViewDonVi)UpdateContext.Model); break;
+            }    
+            return base.UpdateSuccess();
         }
-
-        //protected override void TryDelete(ViewDonVi e)
-        //{
-        //    if (Provider.GetTable<DonVi>().GetValueById("TrucThuocId", e.Id) != null)
-        //    {
-        //        UpdateContext.Message = $"Cần xóa tất cả đơn vị con của {e.TenDayDu}";
-        //        return;
-        //    }
-
-        //    Exec(e.Id);
-        //    DonVi.All.Remove(e);
-        //}
-
-        //protected override void TryInsert(ViewDonVi e)
-        //{
-        //    Exec(null, e.Ten, e.HanhChinhId, e.TenHanhChinh, e.TrucThuocId);
-        //    DonVi.All.Clear();
-        //}
-
-        //protected override void TryUpdate(ViewDonVi e)
-        //{
-        //    Exec(e.Id, e.Ten, e.HanhChinhId, e.TenHanhChinh, e.TrucThuocId);
-        //}
     }
 }

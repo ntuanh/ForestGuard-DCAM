@@ -179,7 +179,7 @@ namespace System.Migration
             }
             protected override string GetFirstLine(TBL source)
             {
-                return $"public partial class {source.Name}Controller : DataController<{source.Name}>";
+                return $"partial class {source.Name}Controller : DataController<{source.Name}>";
             }
 
             protected override void RenderColumn(COL col)
@@ -217,6 +217,7 @@ namespace System.Migration
                 Add("using Models;");
                 Start("class Index : BaseView<DataListViewLayout>");
                 Start("protected override void RenderCore(ViewContext context)");
+                Add($"base.RenderCore(context);");
                 Add($"context.Title = \"List of {source.Name}\";");
                 Add("context.TableColumns = new object[] {").Tab(1);
                 source.ForEach(c => {
@@ -226,10 +227,17 @@ namespace System.Migration
                     }
                 });
                 Tab(-1).Add("};");
+
+                Add("// Nếu không cần tìm kiếm thì xóa đoạn code này");
+                Add("context.Search = (e, s) => {");
+                Tab(1).Add($"var x = ({source.Name})e;")
+                    .Add("return x.Ten.ToLower().Contains(s);");
+                Tab(-1).Add("};");
                 Close().Close();
 
                 Start("class Add : EditView");
                 Start("protected override void RenderCore(ViewContext context)");
+                Add($"base.RenderCore(context);");
                 Add($"context.Title = \"{source.Name} Information\";");
                 Add("context.Editors = new object[] {").Tab(1);
                 source.ForEach(c => {
@@ -238,7 +246,7 @@ namespace System.Migration
                         var type = "";
                         if (c.Parent != null)
                         {
-                            type = $"\r\n\tType = \"select\", ValueName = \"{c.Parent.PrimaryKey.Name}\", DisplayName = \"FieldName\","
+                            type = $" Type = \"select\", ValueName = \"{c.Parent.PrimaryKey.Name}\", DisplayName = \"FieldName\","
                                 + $" Options = Provider.Select<{c.Parent.Name}>(),";
                         }
                         Add("new EditorInfo {"
@@ -253,8 +261,8 @@ namespace System.Migration
 
                 Start("class Edit : Add");
                 Start("protected override void OnReady()");
-                Add("// Thay FieldName bằng tên trường muốn thể hiện trên câu hỏi xóa bản ghi");
-                Add("ShowDeleteAction(\"FieldName\");");
+                Add("// Thay Ten bằng tên trường muốn thể hiện trên câu hỏi xóa bản ghi");
+                Add("ShowDeleteAction(\"Ten\");");
 
                 Add("// Thay EditorName bằng tên trường muốn cấm soạn thảo");
                 Add("Find(\"EditorName\", c => c.IsEnabled = false);");
@@ -355,8 +363,7 @@ namespace System.Migration
             public override Block Generate(TBL source)
             {
                 string procName = "update" + source.Name;
-                Add("IF NOT (SELECT CREATED FROM INFORMATION_SCHEMA.ROUTINES "
-                    + $"WHERE ROUTINE_NAME='{procName}') IS NULL")
+                Add("IF NOT OBJECT_ID('{procName}', 'P') IS NULL")
                     .Tab(1).Add($"drop proc {procName}");
 
                 Go().Add($"create proc {procName}")
@@ -366,7 +373,9 @@ namespace System.Migration
                     var s = $", @{col.Name} {col.Type}";
                     if (!string.IsNullOrEmpty(col.DataSize))
                         s += $"({col.DataSize})";
-                    s += col == source.Identity ? " output" : " = NULL";
+
+                    s += " = NULL";
+                    if (col == source.Identity) s += " output";
                     Add(s);
                 });
 

@@ -9,6 +9,7 @@ namespace WinApp.Controllers
 {
     partial class TaiKhoanController
     {
+        protected override DataSchema.Table CreateDataEngine() => HoSoDb;
         protected override ViewHoSo CreateEntity()
         {
             return new ViewHoSo { QuyenId = 3 };
@@ -26,7 +27,8 @@ namespace WinApp.Controllers
         #region Không dùng Procedure
         DataSchema.Table HoSoDb => Provider.GetTable<HoSo>();
         DataSchema.Table TaiKhoanDb => Provider.GetTable<TaiKhoan>();
-        protected override string GetProcName() => null;
+
+        protected override DataSchema.StoredProc GetStoredProcedure(string name) => null;
         protected override void TryInsert(ViewHoSo e)
         {
             // Kiểm tra tên đăng nhập trong tài khoản 

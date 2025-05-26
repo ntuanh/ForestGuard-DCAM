@@ -24,6 +24,7 @@ namespace WinApp.Views.TaiKhoan
                 new TC { Name = "Email", Caption = "Email", Width = 120 },
                 new TC { Name = "TenDangNhap", Caption = "Tên đăng nhập", Width = 120 },
                 new TC { Name = "Quyen", Caption = "Quyền truy cập", Width = 150 },
+                new TC { Name = "MatKhau", Caption = "Mật khẩu", Width = 150 },
             };
             context.Search = (o, s) =>
             {

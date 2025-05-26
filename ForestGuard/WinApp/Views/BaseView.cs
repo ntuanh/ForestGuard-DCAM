@@ -158,7 +158,13 @@ namespace WinApp.Views
             MainView.DenyButton.IsVisible = true;
             MainView.DenyButton.Click += (s, e) => {
                 var model = ViewContext.Model;
-                var v = model.GetType().GetProperty(name).GetValue(model);
+                var p = model.GetType().GetProperty(name);
+                if (p == null)
+                {
+                    MessageBox.Show($"{model.GetType().Name} không có trường {name}", "Code error");
+                    return;
+                }    
+                var v = p.GetValue(model);
 
                 var res = MessageBox.Show($"Xóa bản ghi {v}", ViewContext.Title, MessageBoxButton.YesNo);
                 if (res == MessageBoxResult.Yes)

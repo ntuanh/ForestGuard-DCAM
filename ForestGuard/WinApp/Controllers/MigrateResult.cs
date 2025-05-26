@@ -12,6 +12,4 @@ namespace WinApp.Controllers
     { 
     
     }
-
-    partial class RungController : DataController<Models.Rung> { }
 }

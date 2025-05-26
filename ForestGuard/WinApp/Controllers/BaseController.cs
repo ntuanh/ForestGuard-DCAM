@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace WinApp.Controllers
 {
     using Models;
+    using TBL = DataSchema.Table;
+    using PROC = DataSchema.StoredProc;
     class UpdateContext : EditContext
     {
         public string Message { get; set; }
@@ -15,22 +17,29 @@ namespace WinApp.Controllers
     {
         public virtual object Index() => View();
     }
-
     class DataController<T> : BaseController
     {
         protected Type EntityType => typeof(T);
-        protected virtual DataSchema.Table DataEngine => Provider.GetTable<T>();
-        protected virtual T CreateEntity() => (T)Activator.CreateInstance(EntityType);
-        protected virtual string GetProcName()
+        protected virtual TBL ViewEngine => Provider.GetTable<T>();
+
+        protected TBL DataEngine
         {
-            var name = EntityType.Name;
-            if (name.ToLower().StartsWith("view"))
-                name = name.Substring(4);
-            return "update" + name;
+            get
+            {
+                if (data == null)
+                    data = CreateDataEngine();
+                return data;
+            }
         }
+        TBL data;
+
+        protected virtual TBL CreateDataEngine() => ViewEngine;
+
+        protected virtual T CreateEntity() => (T)Activator.CreateInstance(typeof(T));
+        protected virtual PROC GetStoredProcedure(string name) => Provider.GetStoredProcedure(name);
         public override object Index()
         {
-            return View(DataEngine.ToList<T>(null, null));
+            return View(ViewEngine.ToList<T>(null, null));
         }
         public virtual object Delete(T entity)
         {
@@ -48,6 +57,10 @@ namespace WinApp.Controllers
         protected UpdateContext UpdateContext { get; set; }
         public object Update(EditContext context)
         {
+            if (DataEngine.Type == "V")
+            {
+                return Error(1, "Bộ xử lý dữ liệu là một VIEW.\nCần viết lại hàm CreateDataEngine() để lấy một bảng.");
+            }
             UpdateContext = new UpdateContext {
                 Action = context.Action,
                 Model = context.Model,
@@ -76,8 +89,7 @@ namespace WinApp.Controllers
         protected virtual object UpdateError() => Error(1, UpdateContext.Message);
         protected virtual void UpdateCore(T e)
         {
-            var procName = GetProcName();
-            var proc = procName == null ? null : Provider.GetStoredProcedure(procName);
+            var proc = GetStoredProcedure("update" + DataEngine.Name);
             if (proc != null)
             {
                 ExecPROC(proc);
@@ -92,7 +104,7 @@ namespace WinApp.Controllers
                 }
             }
         }
-        protected void ExecPROC(DataSchema.StoredProc proc)
+        protected void ExecPROC(PROC proc)
         {
             Provider.CreateCommand(cmd => {
                 cmd.CommandText = proc.Name;
@@ -100,22 +112,23 @@ namespace WinApp.Controllers
 
                 var doc = Document.FromObject(UpdateContext.Model);
                 var res = 0;
-                
+
                 doc.Add("action", (int)UpdateContext.Action);
                 foreach (var p in proc.Parameters.Values)
                 {
-                    cmd.Parameters.AddWithValue($"@{p.Name}", doc.GetString(p.Name));
+                    cmd.Parameters.AddWithValue($"@{p.Name}", doc[p.Name]);
                 }
                 try
                 {
                     res = cmd.ExecuteNonQuery();
                 }
-                catch
+                catch (Exception e)
                 {
+                    UpdateContext.Message = e.Message;
                 }
-                if (res == 0)
+                if (res == 0 && UpdateContext.Message == null)
                 {
-                    UpdateContext.Message = $"Không cập nhật được dữ liệu\n{cmd.CommandText}\n{doc}";
+                    UpdateContext.Message = $"Không có bản ghi nào được cập nhật";
                 }
             });
         }

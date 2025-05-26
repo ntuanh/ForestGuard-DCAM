@@ -47,6 +47,22 @@ namespace System
         {
             public int Position { get; set; }
             public string DataSize { get; set; }
+            public string GetUpdateValue(object value)
+            {
+                if (value == null)
+                    return "NULL";
+
+                var s = $"'{value}'";
+                if (value is string)
+                    s = 'N' + s;
+                return s;
+            }
+            public string GetUpdateEntityValue(Type type, object entity)
+            {
+                var p = type.GetProperty(Name);
+                return GetUpdateValue(p?.GetValue(entity));
+            }
+            public string GetUpdateEntityValue(object entity) => GetUpdateEntityValue(entity.GetType(), entity);
         }
         public interface ITable
         {
@@ -104,22 +120,6 @@ namespace System
         {
             public TBL Parent { get; set; }
             public bool IsNullable { get; set; }
-            public string GetUpdateValue(object value)
-            {
-                if (value == null)
-                    return "NULL";
-
-                var s = $"'{value}'";
-                if (value is string)
-                    s = 'N' + s;
-                return s;
-            }
-            public string GetUpdateEntityValue(Type type, object entity)
-            {
-                var p = type.GetProperty(Name);
-                return GetUpdateValue(p?.GetValue(entity));
-            }
-            public string GetUpdateEntityValue(object entity) => GetUpdateEntityValue(entity.GetType(), entity);
         }
         public class Table : TableBase<COL>
         {

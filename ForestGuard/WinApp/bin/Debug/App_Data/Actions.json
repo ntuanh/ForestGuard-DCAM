@@ -14,86 +14,67 @@
         "hanhchinh/huyen": "Đơn vị cấp huyện",
         "hanhchinh/xa": "Đơn vị cấp xã",
         "me/changepass": "Đổi mật khẩu",
-        "giongcay/index": "Test giongcay" , 
-        "rung": "Quản lí Rừng", // Key cho mục menu chính "Quản lí Rừng"
-        "rung/index": "Thông tin Rừng", // Có thể vẫn dùng cho mục "Thống kê" hoặc trang thông tin chung
-        "rung/bangdulieu": "Bảng Dữ Liệu Rừng", // <<< THÊM KEY MỚI NÀY cho action hiển thị bảng
-        "thientai": "Quản lí Thiên tai",
-        "thientai/index": "Thông tin Thiên tai",
+        "rung": "Rung",
+        "rung/index": "Thông tin rung",
+        "rung/thongke": "Thong ke",
         ".": ""
     },
-    "actors": {
-        "Developer": {
-            "home": {
-                "Childs": [
-                    {
-                        "Text": "SQL",
-                        "Refs": [ "migrate" ]
-                    }
-                ]
-            },
-            "migrate/csharp": {
-                "Childs": [
-                    {
-                        "Text": "Project",
-                        "Refs": [ "migrate/s/model", "migrate/s/controller", "migrate/s/view" ]
-                    }
-                ]
-            },
-            "migrate/sql": {
-                "Childs": [
-                    {
-                        "Text": "Project",
-                        "Refs": [ "migrate/s/proc" ]
-                    }
-                ]
-            }
-        },
-        "Admin": {
-            "home": {
-                "Childs": [
-                    {
-                        "Text": "Người dùng",
-                        "Refs": [ "taikhoan", "taikhoan/lichsu" ]
-                    },
-                    {
-                        "Text": "Hành chính",
-                        "Refs": [ "hanhchinh", "hanhchinh/huyen", "hanhchinh/xa" ]
-                    },
-                    {
-                        "Text": "Profile",
-                        "Refs": [ "me/changepass" ]
-                    },
-                    {
-                        "Text": "Test Rung function ",
-                        "Refs": [ "rung", "rung/index" ]
-                    }
-                ]
-            },
-            "rung": { // Mục menu "Quản lí Rừng" cho Admin
-                "Childs": [
-                    {
-                        "Text": "Bảng Dữ Liệu", // Hoặc "Dữ liệu", hoặc "Xem Bảng" tùy bạn muốn hiển thị
-                        "Refs": [ "rung/index" ] // <<< SỬA ĐỔI: Trỏ đến key mới cho action hiển thị bảng
-                    },
-                    {
-                        "Text": "Thống kê",
-                        "Refs": [ "rung/index" ] // Giữ nguyên nếu "Thống kê" trỏ đến trang thông tin chung
-                    }
-                ]
-            },
-            "thientai": {
-                "Childs": [
-                    {
-                        "Text": "Dữ liệu",
-                        "Refs": [ "thientai/index" ]
-                    },
-                    {
-                        "Text": "Thống kê",
-                        "Refs": [ "thientai/index" ]
-                    }
-                ]
-            }
-        }
+  "actors": {
+    "Developer": {
+      "home": {
+        "Childs": [
+          {
+            "Text": "SQL",
+            "Refs": [ "migrate" ]
+          }
+        ]
+      },
+      "migrate/csharp": {
+        "Childs": [
+          {
+            "Text": "Project",
+            "Refs": [ "migrate/s/model", "migrate/s/controller", "migrate/s/view" ]
+          }
+        ]
+      },
+      "migrate/sql": {
+        "Childs": [
+          {
+            "Text": "Project",
+            "Refs": [ "migrate/s/proc" ]
+          }
+        ]
+      }
+    },
+    "Admin": {
+      "home": {
+        "Childs": [
+          {
+            "Text": "Người dùng",
+            "Refs": [ "taikhoan", "taikhoan/lichsu" ]
+          },
+          {
+            "Text": "Hành chính",
+            "Refs": [ "hanhchinh", "hanhchinh/huyen", "hanhchinh/xa" ]
+          },
+          {
+            "Text": "Profile",
+            "Refs": [ "me/changepass" ]
+          }
+        ]
+      },
+      "rung": {
+        "Childs": [
+          {
+            "Text": "Dữ liệu",
+            "Refs": ["rung/index", "rung/thongke"]
+          },
+          {
+            "Text": "Thống kê",
+            "Refs": [ "rung/thongke" ]
+          }
+        ]
+      }
     }
+  }
 }

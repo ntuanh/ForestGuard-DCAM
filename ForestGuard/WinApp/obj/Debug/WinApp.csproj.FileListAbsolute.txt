@@ -87,73 +87,117 @@ D:\20241\KTPM\WinApp\obj\Debug\Views\_layouts\PageHeader.g.cs
 D:\20241\KTPM\WinApp\obj\Debug\Views\_layouts\PageHeader.baml
 D:\20241\KTPM\WinApp\obj\Debug\Views\Migrate\MigrateLayout.g.cs
 D:\20241\KTPM\WinApp\obj\Debug\Views\Migrate\MigrateLayout.baml
-D:\Apps\BigProject\WinApp\bin\Debug\App_Data\Actions.json
-D:\Apps\BigProject\WinApp\bin\Debug\App_Data\Config.json
-D:\Apps\BigProject\WinApp\bin\Debug\WinApp.exe.config
-D:\Apps\BigProject\WinApp\bin\Debug\WinApp.exe
-D:\Apps\BigProject\WinApp\bin\Debug\WinApp.pdb
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.csproj.AssemblyReference.cache
-D:\Apps\BigProject\WinApp\obj\Debug\MainWindow.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\Views\Migrate\MigrateLayout.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\PageHeader.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\Views\Migrate\CodeViewer.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\MainUserLayout.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\FormViewLayout.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\App.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp_Content.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp_MarkupCompile.cache
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp_MarkupCompile.lref
-D:\Apps\BigProject\WinApp\obj\Debug\App.baml
-D:\Apps\BigProject\WinApp\obj\Debug\MainWindow.baml
-D:\Apps\BigProject\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.baml
-D:\Apps\BigProject\WinApp\obj\Debug\Views\Migrate\MigrateLayout.baml
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\PageHeader.baml
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.baml
-D:\Apps\BigProject\WinApp\obj\Debug\Views\Migrate\CodeViewer.baml
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\MainUserLayout.baml
-D:\Apps\BigProject\WinApp\obj\Debug\Views\_layouts\FormViewLayout.baml
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.g.resources
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.Properties.Resources.resources
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.csproj.Up2Date
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.exe
-D:\Apps\BigProject\WinApp\obj\Debug\WinApp.pdb
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\App_Data\Config.json
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\App_Data\Actions.json
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.exe.config
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.exe
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.pdb
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.csproj.AssemblyReference.cache
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\MainWindow.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\Migrate\MigrateLayout.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\PageHeader.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\Migrate\CodeViewer.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\MainUserLayout.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\FormViewLayout.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\App.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp_Content.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp_MarkupCompile.cache
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp_MarkupCompile.lref
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\App.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\MainWindow.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\Migrate\MigrateLayout.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\PageHeader.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\Migrate\CodeViewer.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\MainUserLayout.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\_layouts\FormViewLayout.baml
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.g.resources
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.Properties.Resources.resources
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.csproj.Up2Date
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.exe
-D:\Apps\ForestGuard-Project\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.pdb
+D:\Download and subnet\KTPM_FULL\WinApp\bin\Debug\App_Data\Actions.json
+D:\Download and subnet\KTPM_FULL\WinApp\bin\Debug\App_Data\Config.json
+D:\Download and subnet\KTPM_FULL\WinApp\bin\Debug\WinApp.exe.config
+D:\Download and subnet\KTPM_FULL\WinApp\bin\Debug\WinApp.exe
+D:\Download and subnet\KTPM_FULL\WinApp\bin\Debug\WinApp.pdb
+D:\Download and subnet\KTPM_FULL\WinApp\bin\Debug\Newtonsoft.Json.dll
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.AssemblyReference.cache
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.SuggestedBindingRedirects.cache
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.exe.config
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\MainWindow.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\MigrateLayout.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\PageHeader.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\CodeViewer.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\MainUserLayout.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\FormViewLayout.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\App.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp_Content.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp_MarkupCompile.cache
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp_MarkupCompile.lref
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\App.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\MainWindow.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\MigrateLayout.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\PageHeader.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\CodeViewer.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\MainUserLayout.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\FormViewLayout.baml
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.g.resources
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.Up2Date
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.exe
+D:\Download and subnet\KTPM_FULL\WinApp\obj\Debug\WinApp.pdb
+D:\KTPM_FULL\WinApp\bin\Debug\App_Data\Actions.json
+D:\KTPM_FULL\WinApp\bin\Debug\App_Data\Config.json
+D:\KTPM_FULL\WinApp\bin\Debug\WinApp.exe.config
+D:\KTPM_FULL\WinApp\bin\Debug\WinApp.exe
+D:\KTPM_FULL\WinApp\bin\Debug\WinApp.pdb
+D:\KTPM_FULL\WinApp\bin\Debug\Newtonsoft.Json.dll
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.AssemblyReference.cache
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.SuggestedBindingRedirects.cache
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.exe.config
+D:\KTPM_FULL\WinApp\obj\Debug\MainWindow.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\MigrateLayout.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\PageHeader.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\CodeViewer.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\MainUserLayout.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\FormViewLayout.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\App.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp_Content.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp_MarkupCompile.cache
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp_MarkupCompile.lref
+D:\KTPM_FULL\WinApp\obj\Debug\App.baml
+D:\KTPM_FULL\WinApp\obj\Debug\MainWindow.baml
+D:\KTPM_FULL\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.baml
+D:\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\MigrateLayout.baml
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\PageHeader.baml
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.baml
+D:\KTPM_FULL\WinApp\obj\Debug\Views\Migrate\CodeViewer.baml
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\MainUserLayout.baml
+D:\KTPM_FULL\WinApp\obj\Debug\Views\_layouts\FormViewLayout.baml
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.g.resources
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.csproj.Up2Date
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.exe
+D:\KTPM_FULL\WinApp\obj\Debug\WinApp.pdb
+D:\BigProject\WinApp\bin\Debug\App_Data\Actions.json
+D:\BigProject\WinApp\bin\Debug\App_Data\Config.json
+D:\BigProject\WinApp\bin\Debug\WinApp.exe.config
+D:\BigProject\WinApp\bin\Debug\WinApp.exe
+D:\BigProject\WinApp\bin\Debug\WinApp.pdb
+D:\BigProject\WinApp\bin\Debug\Newtonsoft.Json.dll
+D:\BigProject\WinApp\obj\Debug\WinApp.csproj.AssemblyReference.cache
+D:\BigProject\WinApp\obj\Debug\WinApp.csproj.SuggestedBindingRedirects.cache
+D:\BigProject\WinApp\obj\Debug\WinApp.exe.config
+D:\BigProject\WinApp\obj\Debug\MainWindow.g.cs
+D:\BigProject\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.g.cs
+D:\BigProject\WinApp\obj\Debug\Views\Migrate\MigrateLayout.g.cs
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\PageHeader.g.cs
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.g.cs
+D:\BigProject\WinApp\obj\Debug\Views\Migrate\CodeViewer.g.cs
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\MainUserLayout.g.cs
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\FormViewLayout.g.cs
+D:\BigProject\WinApp\obj\Debug\App.g.cs
+D:\BigProject\WinApp\obj\Debug\WinApp_Content.g.cs
+D:\BigProject\WinApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\BigProject\WinApp\obj\Debug\WinApp_MarkupCompile.cache
+D:\BigProject\WinApp\obj\Debug\WinApp_MarkupCompile.lref
+D:\BigProject\WinApp\obj\Debug\App.baml
+D:\BigProject\WinApp\obj\Debug\MainWindow.baml
+D:\BigProject\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.baml
+D:\BigProject\WinApp\obj\Debug\Views\Migrate\MigrateLayout.baml
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\PageHeader.baml
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\DataListViewLayout.baml
+D:\BigProject\WinApp\obj\Debug\Views\Migrate\CodeViewer.baml
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\MainUserLayout.baml
+D:\BigProject\WinApp\obj\Debug\Views\_layouts\FormViewLayout.baml
+D:\BigProject\WinApp\obj\Debug\WinApp.g.resources
+D:\BigProject\WinApp\obj\Debug\WinApp.Properties.Resources.resources
+D:\BigProject\WinApp\obj\Debug\WinApp.csproj.GenerateResource.cache
+D:\BigProject\WinApp\obj\Debug\WinApp.csproj.CoreCompileInputs.cache
+D:\BigProject\WinApp\obj\Debug\WinApp.csproj.Up2Date
+D:\BigProject\WinApp\obj\Debug\WinApp.exe
+D:\BigProject\WinApp\obj\Debug\WinApp.pdb
