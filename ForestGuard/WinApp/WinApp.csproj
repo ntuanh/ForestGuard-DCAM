@@ -74,6 +74,7 @@
     <Compile Include="Controllers\MigrateResult.cs" />
     <Compile Include="Controllers\RungController.cs" />
     <Compile Include="Controllers\TaiKhoanController.cs" />
+    <Compile Include="Controllers\ThientaiController.cs" />
     <Compile Include="Models\%28Document%29.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Migration\CodeGenerator.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="Models\MigrateResult.cs" />
     <Compile Include="Models\Migration\Provider.cs" />
     <Compile Include="Models\Rung.cs" />
+    <Compile Include="Models\ThienTai.cs" />
     <Compile Include="Models\UpdateContext.cs" />
     <Compile Include="Views\Admin\Test.cs" />
     <Compile Include="Views\BaseView.cs" />
@@ -99,6 +101,7 @@
     </Compile>
     <Compile Include="Views\TaiKhoan\TaiKhoanManagerView.cs" />
     <Compile Include="Views\Rung\Index.cs" />
+    <Compile Include="Views\ThienTai\Index.cs" />
     <Compile Include="Views\_layouts\PageHeader.xaml.cs">
       <DependentUpon>PageHeader.xaml</DependentUpon>
     </Compile>

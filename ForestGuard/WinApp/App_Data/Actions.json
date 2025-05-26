@@ -17,6 +17,9 @@
         "rung": "Rung",
         "rung/index": "Thông tin rung",
         "rung/thongke": "Thong ke",
+        "thientai": "Thiên tai",
+        "thientai/index": "Thông tin thiên tai",
+        "thientai/thongke": "Thống kê thiên tai",
         ".": ""
     },
   "actors": {
@@ -63,18 +66,30 @@
           }
         ]
       },
-      "rung": {
-        "Childs": [
-          {
-            "Text": "Dữ liệu",
-            "Refs": ["rung/index", "rung/thongke"]
-          },
-          {
-            "Text": "Thống kê",
-            "Refs": [ "rung/thongke" ]
-          }
-        ]
-      }
+        "rung": {
+            "Childs": [
+                {
+                    "Text": "Dữ liệu",
+                    "Refs": [ "rung/index", "rung/thongke" ]
+                },
+                {
+                    "Text": "Thống kê",
+                    "Refs": [ "rung/thongke" ]
+                }
+            ]
+        },
+        "thientai": {
+            "Childs": [
+                {
+                    "Text": "Dữ liệu",
+                    "Refs": [ "thientai/index", "thientai/thongke" ]
+                },
+                {
+                    "Text": "Thống kê",
+                    "Refs": [ "thientai/thongke" ]
+                }
+            ]
+        }
     }
   }
 }

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\BigProject\WinApp\obj\Debug\
+D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\
 WinApp
 none
 false
 DEBUG;TRACE
-D:\BigProject\WinApp\App.xaml
+D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\App.xaml
 8851687289
 2-737652470
-711121994547
-15-459362462
+74-1392207570
+15-1734381723
 MainWindow.xaml;Views\HanhChinh\DonViSelector.xaml;Views\Migrate\MigrateLayout.xaml;Views\_layouts\PageHeader.xaml;Views\_layouts\DataListViewLayout.xaml;Views\Migrate\CodeViewer.xaml;Views\_layouts\MainUserLayout.xaml;Views\_layouts\FormViewLayout.xaml;
 
 False
