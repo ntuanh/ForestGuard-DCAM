@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Dell\\BigProject\\ForestGuard-DCAM\\ForestGuard\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|c:\\users\\dell\\bigproject\\forestguard-dcam\\forestguard\\winapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WinApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Dell\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WinApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwEEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T06:41:12.155Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
