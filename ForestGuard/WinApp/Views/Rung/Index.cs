@@ -52,7 +52,7 @@ namespace WinApp.Views.Rung
                 new EditorInfo { Name = "DieuKienId", Caption = "Điều kiện", Layout = 6,   Type = "select", ValueName = "Id", DisplayName = "Ten", Options = Provider.Select<DieuKien>(), },
                 new EditorInfo { Name = "LoaiCayId", Caption = "Loại cây", Layout = 6,   Type = "select", ValueName = "Id", DisplayName = "Ten", Options = Provider.Select<LoaiCay>(), },
                 new EditorInfo { Name = "MucDichId", Caption = "Mục đích", Layout = 6,   Type = "select", ValueName = "Id", DisplayName = "Ten", Options = Provider.Select<MucDich>(), },
-                new EditorInfo { Name = "TruLuong", Caption = "Trữ lượng", Layout = 6,   Type = "select", ValueName = "Id", DisplayName = "Ten", Options = Provider.Select<TruLuong>(), },
+                new EditorInfo { Name = "TruLuongId", Caption = "Trữ lượng", Layout = 6,   Type = "select", ValueName = "Id", DisplayName = "Ten", Options = Provider.Select<TruLuong>(), },
                 new EditorInfo { Name = "ChuId", Caption = "Chủ", Layout = 6,   Type = "select", ValueName = "Id", DisplayName = "Ten", Options = Provider.Select<Chu>(), },
                 new EditorInfo { Name = "TrucThuocId", Caption = "Trực thuộc", Layout = 12, Required = false, Type = "select", ValueName = "Id", DisplayName = "Ten", Options = Provider.Select<Rung>(), },
             };
