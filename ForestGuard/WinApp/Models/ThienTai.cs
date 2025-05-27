@@ -6,5 +6,8 @@ namespace Models
     {
         public string TenThienTai => Provider.GetTable<LoaiThienTai>().Find<LoaiThienTai>(LoaiThienTaiId)?.Ten ?? string.Empty;
 
+        public string LoaiThienTai => Provider.GetTable<LoaiThienTai>().Find<LoaiThienTai>(LoaiThienTaiId)?.Ten ?? string.Empty;
+        public string PhanLoai => Provider.GetTable<PhanLoai>().Find<PhanLoai>(PhanLoaiId)?.Ten ?? string.Empty;
+
     }
 }

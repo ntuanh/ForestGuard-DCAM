@@ -13,7 +13,7 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <Border x:Name="Banner"
-                Background="#FFF"
+                Background="#87C786"
                 BorderBrush="WhiteSmoke"
                 BorderThickness="0 0 0 2">
             <Grid>
@@ -23,12 +23,12 @@
                     <ColumnDefinition Width="100" />
                 </Grid.ColumnDefinitions>
                 <StackPanel Margin="10 0" VerticalAlignment="Center">
-                    <Label Content="K.T.P.M" 
+                    <Label Content="K.T.P.M " 
                                Padding="0"
-                               Foreground="#624bff"
+                               Foreground="Black"
                                FontSize="16"
                                FontWeight="Bold" />
-                    <Label Content="Ứng dụng desktop" 
+                    <Label Content="Ứng dụng desktop from DCAM team" 
                                Foreground="#624bff"
                                Padding="0" />
                 </StackPanel>
