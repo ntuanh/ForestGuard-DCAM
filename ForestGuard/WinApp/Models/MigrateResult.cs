@@ -149,6 +149,7 @@ namespace Models
         public string MucDoThietHai { get; set; }
         public int? LoaiThienTaiId { get; set; }
         public int? PhanLoaiId { get; set; }
+        public int? DonViId { get; set; }
     }
 }
 namespace Models
@@ -223,6 +224,10 @@ namespace Models
         public int? PhanLoaiId { get; set; }
         public string LoaiThienTai { get; set; }
         public string PhanLoai { get; set; }
+
+        public string DonVi { get; set; }
+        public int? DonViId { get; set; }
+
     }
 }
 

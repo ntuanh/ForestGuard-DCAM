@@ -239,11 +239,6 @@ C:\Users\Dell\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.cs
 C:\Users\Dell\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.csproj.Up2Date
 C:\Users\Dell\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.exe
 C:\Users\Dell\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.pdb
-D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\App_Data\Actions.json
-D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\App_Data\Config.json
-D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.exe.config
-D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.exe
-D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.pdb
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.csproj.AssemblyReference.cache
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.csproj.SuggestedBindingRedirects.cache
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp.exe.config
@@ -260,6 +255,11 @@ D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp_Content.
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp_MarkupCompile.cache
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\WinApp_MarkupCompile.lref
+D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\App_Data\Actions.json
+D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\App_Data\Config.json
+D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.exe.config
+D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.exe
+D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\bin\Debug\WinApp.pdb
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\App.baml
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\MainWindow.baml
 D:\Apps\BigProject\ForestGuard-DCAM\ForestGuard\WinApp\obj\Debug\Views\HanhChinh\DonViSelector.baml
