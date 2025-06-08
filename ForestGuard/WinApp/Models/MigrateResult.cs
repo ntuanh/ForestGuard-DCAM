@@ -111,7 +111,7 @@ namespace Models
         public int? Id { get; set; }
         public string Ten { get; set; }
         public string ToaDo { get; set; }
-        public string DienTich { get; set; }
+        public int DienTich { get; set; }
         public int? DonViId { get; set; }
         public int? NguonGocId { get; set; }
         public int? DieuKienId { get; set; }
@@ -160,6 +160,18 @@ namespace Models
         public string Ten { get; set; }
     }
 }
+
+//namespace Models
+//{
+//    public partial class TrucThuoc
+//    {
+//        public int? Id { get; set; }
+//        public string Ten { get; set; }
+//    }
+//}
+
+
+
 namespace Models
 {
     public partial class ViewDonVi
@@ -210,7 +222,7 @@ namespace Models
         public string MucDich { get; set; }
         public string Chu { get; set; }
         public string TruLuong { get; set; }
-        public string RungTrucThuoc { get; set; }
+        public string TrucThuoc { get; set; }
     }
 }
 namespace Models
@@ -224,10 +236,5 @@ namespace Models
         public int? PhanLoaiId { get; set; }
         public string LoaiThienTai { get; set; }
         public string PhanLoai { get; set; }
-
-        public string DonVi { get; set; }
-        public int? DonViId { get; set; }
-
     }
 }
-

@@ -14,12 +14,12 @@
         "hanhchinh/huyen": "Đơn vị cấp huyện",
         "hanhchinh/xa": "Đơn vị cấp xã",
         "me/changepass": "Đổi mật khẩu",
-        "rung": "Rung",
-        "rung/index": "Thông tin rung",
-        "rung/thongke": "Thong ke",
+        "rung": "Rừng",
+        "rung/index": "Thông tin Rừng",
+        "rung/thongkedientich": "Thống kê",
         "thientai": "Thiên tai",
         "thientai/index": "Thông tin thiên tai",
-        "thientai/thongke": "Thống kê thiên tai",
+        "thientai/thongkethientai": "Thống kê thiên tai",
         ".": ""
     },
   "actors": {
@@ -70,11 +70,11 @@
             "Childs": [
                 {
                     "Text": "Dữ liệu",
-                    "Refs": [ "rung/index", "rung/thongke" ]
+                    "Refs": [ "rung/index", "rung/thongkedientich" ]
                 },
                 {
-                    "Text": "Thống kê",
-                    "Refs": [ "rung/thongke" ]
+                    "Text": "Thống kê diện tích",
+                    "Refs": [ "rung/thongkedientich" ]
                 }
             ]
         },
@@ -82,11 +82,11 @@
             "Childs": [
                 {
                     "Text": "Dữ liệu",
-                    "Refs": [ "thientai/index", "thientai/thongke" ]
+                    "Refs": [ "thientai/index", "thientai/thongkethientai" ]
                 },
                 {
                     "Text": "Thống kê",
-                    "Refs": [ "thientai/thongke" ]
+                    "Refs": [ "thientai/thongkethientai" ]
                 }
             ]
         }

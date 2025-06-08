@@ -3,6 +3,31 @@ namespace WinApp.Views.Rung
 {
     using Vst.Controls;
     using Models;
+
+    class DienTichColumn : TableColumn
+    {
+        public DienTichColumn()
+        {
+            Name = "DienTichHa";
+            Caption = "Diện tích (ha)";
+            Width = 100;
+            HorizontalAlignment = System.Windows.HorizontalAlignment.Right;
+        }
+    }
+    class ThongKeDienTich : BaseView<DataListViewLayout>
+    {
+        protected override void RenderCore(ViewContext context)
+        {
+            base.RenderCore(context);
+            context.Title = "Thống kê rừng";
+            context.TableColumns = new object[] {
+                new TableColumn { Name = "DonVi", Caption = "Đơn vị", Width = 200, },
+                new DienTichColumn(),
+            };
+            context.Search = null; // Không cần tìm kiếm
+        }
+    }
+
     class Index : BaseView<DataListViewLayout>
     {
         protected override void RenderCore(ViewContext context)
@@ -12,15 +37,15 @@ namespace WinApp.Views.Rung
             context.TableColumns = new object[] {
                 new TableColumn { Name = "Ten", Caption = "Tên rừng", Width = 230, },
                 new TableColumn { Name = "ToaDo", Caption = "Tọa độ", Width = 90, },
-                new TableColumn { Name = "DienTich", Caption = "Diện tích", Width = 60, },
-                new TableColumn { Name = "DonVi", Caption = "Đơn vị", Width = 100, },
-                new TableColumn { Name = "LoaiCay", Caption = "Loại cây", Width = 160, },
-                new TableColumn { Name = "NguonGoc", Caption = "Nguồn gốc", Width = 80, },
+                new DienTichColumn(),
+                new TableColumn { Name = "DonVi", Caption = "Đơn vị", Width = 150, },
+                new TableColumn { Name = "LoaiCay", Caption = "Loại cây", Width = 180, },
+                new TableColumn { Name = "NguonGoc", Caption = "Nguồn gốc", Width = 150, },
                 new TableColumn { Name = "DieuKien", Caption = "Điều kiện", Width = 150, },
                 new TableColumn { Name = "MucDich", Caption = "Mục đích", Width = 180, },
-                new TableColumn { Name = "Chu", Caption = "Chủ rừng", Width = 100, },
+                new TableColumn { Name = "Chu", Caption = "Chủ rừng", Width = 150, },
                 new TableColumn { Name = "TruLuong", Caption = "Trữ lượng", Width = 100, },
-                //new TableColumn { Name = "TrucThuocId", Caption = "TrucThuocId Header", Width = 100, },
+                new TableColumn { Name = "TrucThuoc", Caption = "Trực thuộc", Width = 230, },
                 //new TableColumn { Name = "TenDonVi", Caption = "TenDonVi Header", Width = 100, },
                 //new TableColumn { Name = "LoaiCay", Caption = "LoaiCay Header", Width = 100, },
                 //new TableColumn { Name = "NguonGoc", Caption = "NguonGoc Header", Width = 100, },

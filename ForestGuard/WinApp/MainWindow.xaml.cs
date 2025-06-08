@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 
 namespace WinApp
 {
+    // ntuanh ....
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
