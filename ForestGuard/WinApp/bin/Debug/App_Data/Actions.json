@@ -70,7 +70,7 @@
             "Childs": [
                 {
                     "Text": "Dữ liệu",
-                    "Refs": [ "rung/index", "rung/thongkedientich" ]
+                    "Refs": [ "rung/index"]
                 },
                 {
                     "Text": "Thống kê diện tích",
@@ -82,7 +82,7 @@
             "Childs": [
                 {
                     "Text": "Dữ liệu",
-                    "Refs": [ "thientai/index", "thientai/thongkethientai" ]
+                    "Refs": [ "thientai/index" ]
                 },
                 {
                     "Text": "Thống kê",
