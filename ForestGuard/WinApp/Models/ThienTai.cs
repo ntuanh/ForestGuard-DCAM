@@ -2,8 +2,16 @@
 
 namespace Models
 {
+    public class ThongKeThienTaiDonVi : ThienTai {
+    }
     public partial class ThienTai
     {
+        public int TongSoThienTai { get; set; } = 0;
+        public int SoLuongBao { get; set; } = 0;
+
+        public int SoLuongLuLut { get; set; }= 0;
+        public int SoLuongHanHan { get; set; } = 0;
+        public int SoLuongSatLo { get; set; } = 0;
         public string TenThienTai => Provider.GetTable<LoaiThienTai>().Find<LoaiThienTai>(LoaiThienTaiId)?.Ten ?? string.Empty;
 
         public string LoaiThienTai => Provider.GetTable<LoaiThienTai>().Find<LoaiThienTai>(LoaiThienTaiId)?.Ten ?? string.Empty;

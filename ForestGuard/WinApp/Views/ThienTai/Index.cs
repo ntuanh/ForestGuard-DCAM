@@ -3,6 +3,26 @@ namespace WinApp.Views.Thientai
 {
     using Vst.Controls;
     using Models;
+    using WinApp.Views.Rung;
+
+    class ThongKeThienTai : BaseView<DataListViewLayout>
+    {
+        protected override void RenderCore(ViewContext context)
+        {
+            base.RenderCore(context);
+            context.Title = "Thống kê thiên tai";
+            context.TableColumns = new object[] {
+                new TableColumn { Name = "DonVi", Caption = "Đơn vị", Width = 200, },
+                new TableColumn { Name = "SoLuongBao", Caption = "Số lượng báo cáo", Width = 150, },
+                new TableColumn { Name = "SoLuongLuLut", Caption = "Số lượng lũ lụt", Width = 150, },
+                new TableColumn { Name = "SoLuongHanHan", Caption = "Số lượng bão hạn hán", Width = 150, },
+                new TableColumn { Name = "SoLuongSatLo", Caption = "Số lượng sạt lở", Width = 150, },
+                new TableColumn { Name = "TongSoThienTai", Caption = "Tổng số lượng thiên tai", Width = 150, },
+                //new DienTichColumn(),
+            };
+            context.Search = null; // Không cần tìm kiếm
+        }
+    }
     class Index : BaseView<DataListViewLayout>
     {
         protected override void RenderCore(ViewContext context)

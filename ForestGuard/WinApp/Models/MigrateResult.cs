@@ -150,6 +150,7 @@ namespace Models
         public int? LoaiThienTaiId { get; set; }
         public int? PhanLoaiId { get; set; }
         public int? DonViId { get; set; }
+        //public int? TongSoThienTai { get; set; }
     }
 }
 namespace Models
