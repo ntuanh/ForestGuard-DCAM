@@ -13,41 +13,66 @@
     <Border BorderBrush="#CCC" BorderThickness="1">
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="40" />
+                <RowDefinition Height="55" />
                 <RowDefinition />
                 <RowDefinition Height="50" />
             </Grid.RowDefinitions>
 
             <Border BorderThickness="0 0 0 1" 
                     BorderBrush="#CCC" 
-                    Background="#EEE">
+                    Background="#D0D7E1">
                 <TextBlock VerticalAlignment="Center"
-                   HorizontalAlignment="Center"
-                   FontWeight="Bold"
-                   FontSize="18" x:Name="Title">TITLE</TextBlock>
+                           HorizontalAlignment="Center"
+                           FontWeight="Bold"
+                           FontSize="25" x:Name="Title">TITLE</TextBlock>
             </Border>
-            <Border x:Name="Body" Grid.Row="1" Padding="20">
 
+            <Border x:Name="Body" Grid.Row="1" Padding="20" Margin="5,0,5,0">
+                <Grid>
+                    <Image Source="pack://application:,,,/WinApp;component/Views/images/Cat.png" 
+                           HorizontalAlignment="Right" 
+                           VerticalAlignment="Bottom" 
+                           Width="100" Height="76" Margin="0,0,-17,94" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-3.878"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </Grid>
             </Border>
+
             <Border x:Name="Footer" Grid.Row="2" 
                     BorderThickness="0 1 0 0"
-                    Background="#EEE"
+                    Background="#D0D7E1"
                     BorderBrush="#CCC">
                 <StackPanel x:Name="ActionPanel"
-                        Orientation="Horizontal"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center">
-
-                    <vst:Button x:Name="AcceptButton" Text="Xác nhận" />
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center"
+                            Margin="0,0,0,0">
+                    <vst:Button x:Name="AcceptButton" 
+                                Text="Xác nhận" 
+                                CornerRadius="8" 
+                                Width="100" Height="35"
+                                Background="#6699CC"
+                                Foreground="Black"
+                                Margin="0,0,10,0"/>
                     <vst:Button x:Name="DenyButton" 
                                 Text="No" 
                                 Visibility="Collapsed"
-                                Background="Red" />
+                                Background="Red" 
+                                Width="100" Height="35"
+                                CornerRadius="8"/>
                     <vst:Button x:Name="CancelButton" 
                                 Text="Hủy"
                                 Visibility="Collapsed"
-                                Background="#333"/>
-
+                                Background="#333"
+                                Width="100" Height="35"
+                                CornerRadius="8"/>
                 </StackPanel>
             </Border>
         </Grid>

@@ -7,13 +7,15 @@
              xmlns:vst="clr-namespace:Vst.Controls"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
+
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60" />
+            <RowDefinition Height="58" />
             <RowDefinition />
         </Grid.RowDefinitions>
+
         <Border x:Name="Banner"
-                Background="#87C786"
+                Background="#C2D1FF"
                 BorderBrush="WhiteSmoke"
                 BorderThickness="0 0 0 2">
             <Grid>
@@ -22,47 +24,63 @@
                     <ColumnDefinition />
                     <ColumnDefinition Width="100" />
                 </Grid.ColumnDefinitions>
+
                 <StackPanel Margin="10 0" VerticalAlignment="Center">
                     <Label Content="K.T.P.M " 
-                               Padding="0"
-                               Foreground="Black"
-                               FontSize="16"
-                               FontWeight="Bold" />
-                    <Label Content="Ứng dụng desktop from DCAM team" 
-                               Foreground="#624bff"
-                               Padding="0" />
+                           Padding="0"
+                           Foreground="Black"
+                           FontSize="16"
+                           FontWeight="Bold" />
+                    <Label Content="Desktop application from DCAM team" 
+                           Foreground="black"
+                           Padding="0" />
                 </StackPanel>
 
                 <local:AppMainMenu Grid.Column="1"
-                                    VerticalAlignment="Center"
-                                    x:Name="TopMenu">
-                </local:AppMainMenu>
+                                   VerticalAlignment="Center"
+                                   x:Name="TopMenu" />
+
                 <vst:HorizontalMenu Grid.Column="2"
                                     HorizontalAlignment="Right"
                                     VerticalAlignment="Center"
                                     Margin="0 0 10 0"
                                     x:Name="UserActions">
                     <vst:Button x:Name="MeButton"
-                                Padding="10 4"
+                                Padding="14 8"
                                 BorderRadius="10"
-                                Background="#64F2" 
-                                Foreground="Black" />
-                    
+                                Background="#85A3FF" 
+                                Foreground="Black"
+                                Width="90"
+                                Height="38" />
                 </vst:HorizontalMenu>
             </Grid>
         </Border>
-        
+
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250" />
-                <ColumnDefinition />
+                <ColumnDefinition Width="75*" />
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="211*" />
             </Grid.ColumnDefinitions>
 
-            <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <vst:VerticalMenu x:Name="SideMenu" />
-            </ScrollViewer>
-            <Border x:Name="Body" Grid.Column="1">
-                
+            <Grid>
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          Grid.Column="0"
+                          Background="#F5F5F5">
+                    <vst:VerticalMenu x:Name="SideMenu" Background="White" />
+                </ScrollViewer>
+                <Image Source="pack://application:,,,/WinApp;component/Views/images/Mouse.jpg"
+                       Width="190" Height="190"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Panel.ZIndex="99" />
+            </Grid>
+
+            <GridSplitter Grid.Column="1"
+                          HorizontalAlignment="Stretch"
+                          Background="Gray">
+            </GridSplitter>
+            <Border x:Name="Body" Grid.Column="2" Background="#F0F0F0">
             </Border>
         </Grid>
     </Grid>
