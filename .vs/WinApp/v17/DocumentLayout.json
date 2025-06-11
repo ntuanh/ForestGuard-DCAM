@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|d:\\bigproject\\forestguard-dcam\\forestguard\\winapp\\views\\hanhchinh\\donviselector.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\views\\hanhchinh\\donviselector.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|d:\\bigproject\\forestguard-dcam\\forestguard\\winapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|d:\\bigproject\\forestguard-dcam\\forestguard\\winapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|d:\\bigproject\\forestguard-dcam\\forestguard\\winapp\\views\\migrate\\codeviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\views\\migrate\\codeviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|d:\\bigproject\\forestguard-dcam\\forestguard\\winapp\\views\\_layouts\\mainuserlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\views\\_layouts\\mainuserlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\winapp\\views\\_layouts\\formviewlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\views\\_layouts\\formviewlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\winapp\\views\\_layouts\\pageheader.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\views\\_layouts\\pageheader.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|d:\\bigproject\\forestguard-dcam\\forestguard\\winapp\\views\\_layouts\\datalistviewlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\views\\_layouts\\datalistviewlayout.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\winapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{897D371C-FAC8-4711-9A23-4ED46A663D0D}|WinApp\\WinApp.csproj|solutionrelative:winapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DonViSelector.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\HanhChinh\\DonViSelector.xaml",
+              "RelativeDocumentMoniker": "WinApp\\Views\\HanhChinh\\DonViSelector.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\HanhChinh\\DonViSelector.xaml",
+              "RelativeToolTip": "WinApp\\Views\\HanhChinh\\DonViSelector.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-10T14:07:17.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\App.xaml",
+              "RelativeDocumentMoniker": "WinApp\\App.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\App.xaml",
+              "RelativeToolTip": "WinApp\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-10T14:06:49.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WinApp\\MainWindow.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\MainWindow.xaml",
+              "RelativeToolTip": "WinApp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-10T14:06:46.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CodeViewer.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\Migrate\\CodeViewer.xaml",
+              "RelativeDocumentMoniker": "WinApp\\Views\\Migrate\\CodeViewer.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\Migrate\\CodeViewer.xaml",
+              "RelativeToolTip": "WinApp\\Views\\Migrate\\CodeViewer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-10T14:06:11.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataListViewLayout.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\DataListViewLayout.xaml",
+              "RelativeDocumentMoniker": "WinApp\\Views\\_layouts\\DataListViewLayout.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\DataListViewLayout.xaml",
+              "RelativeToolTip": "WinApp\\Views\\_layouts\\DataListViewLayout.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-10T13:55:31.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PageHeader.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\PageHeader.xaml",
+              "RelativeDocumentMoniker": "WinApp\\Views\\_layouts\\PageHeader.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\PageHeader.xaml",
+              "RelativeToolTip": "WinApp\\Views\\_layouts\\PageHeader.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T17:00:07.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainUserLayout.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\MainUserLayout.xaml",
+              "RelativeDocumentMoniker": "WinApp\\Views\\_layouts\\MainUserLayout.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\MainUserLayout.xaml",
+              "RelativeToolTip": "WinApp\\Views\\_layouts\\MainUserLayout.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T16:51:56.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormViewLayout.xaml",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\FormViewLayout.xaml",
+              "RelativeDocumentMoniker": "WinApp\\Views\\_layouts\\FormViewLayout.xaml",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\Views\\_layouts\\FormViewLayout.xaml",
+              "RelativeToolTip": "WinApp\\Views\\_layouts\\FormViewLayout.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-08T16:47:51.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "WinApp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\BigProject\\ForestGuard-DCAM\\ForestGuard\\WinApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "WinApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T06:41:12.155Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="WinApp.Views.MainUserLayout"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WinApp.Views"
+             xmlns:vst="clr-namespace:Vst.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Border x:Name="Banner"
+                Background="#C2D1FF"
+                BorderBrush="WhiteSmoke"
+                BorderThickness="0 0 0 2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Margin="10 0" VerticalAlignment="Center">
+                    <Label Content="K.T.P.M " 
+                           Padding="0"
+                           Foreground="Black"
+                           FontSize="16"
+                           FontWeight="Bold" />
+                    <Label Content="Desktop application from DCAM team" 
+                           Foreground="black"
+                           Padding="0" />
+                </StackPanel>
+
+                <local:AppMainMenu Grid.Column="1"
+                                   VerticalAlignment="Center"
+                                   x:Name="TopMenu" />
+
+                <vst:HorizontalMenu Grid.Column="2"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Margin="0 0 10 0"
+                                    x:Name="UserActions">
+                    <vst:Button x:Name="MeButton"
+                                Padding="14 8"
+                                BorderRadius="10"
+                                Background="#85A3FF" 
+                                Foreground="Black"
+                                Width="90"
+                                Height="38" />
+                </vst:HorizontalMenu>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75*" />
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="211*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <ScrollViewer VerticalScrollBarVisibility="Auto"
+                          Grid.Column="0"
+                          Background="white">
+                    <vst:VerticalMenu x:Name="SideMenu" Background="#FFFBF0"/>
+                </ScrollViewer>
+                <Image Source="pack://application:,,,/WinApp;component/Views/images/DCAM.jpg"
+                       Width="190" Height="190"
+                       HorizontalAlignment="Left"
+                       VerticalAlignment="Bottom"
+                       Panel.ZIndex="10
+         " Margin="0,202,0,0" />
+            </Grid>
+
+            <GridSplitter Grid.Column="1"
+                          HorizontalAlignment="Stretch"
+                          Background="Gray">
+            </GridSplitter>
+            <Border x:Name="Body" Grid.Column="2" Background="#F0F0F0">
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>
